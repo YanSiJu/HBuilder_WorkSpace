@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>forEach练习</title>
+		
+		<script type="text/javascript">
+			var arr = [8,12,"Bill",9.1,"Python","spring","SpringMVC","Mybatis"];
+			
+			/*
+			 *forEach():回调函数，入参为一个函数对象
+			 *该函数对象接受3个参数
+			 * 第1个参数:正在遍历的数组中的元素
+			 * 第2个参数:元素的索引
+			 * 第3个参数:正在遍历的数组
+			 * */
+			arr.forEach(
+				function(a,index,arr){
+					console.log("a:"+a+"  index:"+index);
+					//console.log("---->arr:"+arr+"  d:"+d);
+				}
+			);
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

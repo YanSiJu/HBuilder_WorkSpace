@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		
+
+		var obj = new Object();
+		document.write(obj);
+		
+		obj.name = "Bill";
+		obj.age = 12;
+		obj.sex = "gender";
+		console.log(obj);
+		console.log("name:"+obj.name);
+		console.log("sex:"+obj.sex);
+		console.log("age:"+obj.age);
+		
+		/*
+		 *使用in判断对象中是否存在某个属性
+		 * 用法:"属性名"  in  对象名
+		 * ex:"age" in obj
+		 * 返回true 或者 false
+		 * */
+		console.log("age" in obj);
+		console.log("birth" in obj);
+		
+		obj.name = "Martin";
+		console.log(obj);
+		
+		/*
+		 *使用delete可以删除对象的某个属性
+		 * delete 对象名.属性名
+		 * ex:delete obj.name;
+		 * */
+		delete obj.name;
+		console.log("删除name属性后:");
+		console.log("name" in obj);
+		console.log(obj);
+		
+	</script>
+	
+	<body>
+		
+	</body>
+</html>

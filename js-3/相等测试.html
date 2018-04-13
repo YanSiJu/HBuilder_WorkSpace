@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>相等测试</title>
+		
+		<script type="text/javascript">
+			var obj = {
+				name:"Mikeal",
+				sex:"男",
+				age:20
+			};
+			
+			var obj_1 = {
+				name:"Mikeal",
+				sex:"男",
+				age:20
+			};
+			
+			console.log("obj_1 == obj:");
+			console.log(obj_1 == obj);
+			console.log("obj_1.name == obj.name:");
+			console.log(obj_1.name == obj.name);
+
+			var s = "abc";
+			var str = "abc";
+			
+			var m = new String("abc");
+			var n = new String("abc");
+			
+			console.log("m:"+m);
+			console.log("n:"+n);
+			console.log("s:"+s);
+			console.log("str:"+str);
+			
+			console.log("s == str:");
+			console.log(s == str);
+			
+			console.log("n == m:");
+			console.log(n == m);
+			
+			
+			console.log("n == s:");
+			console.log(n == s);
+			console.log("m == str:");
+			console.log(m == str);
+			
+			console.log(typeof m);
+			console.log(m instanceof String);
+			
+			
+
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

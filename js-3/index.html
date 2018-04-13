@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>javascript练习</title>
+		
+		<script type="text/javascript">
+			function fun(){
+				
+				//console.log(this.name);
+				console.log(this);
+			}
+			
+			var name = "全局name";
+			//window.fun();
+			fun();
+			
+			
+			var obj = {
+				
+				name:"Bill",
+				sex:"男",
+				age:500,
+				method:fun,
+				sayname:function(){
+					alert(this.method);
+				}
+			};
+			
+			obj.method();
+			console.log(typeof obj);
+			
+			
+			
+			
+			//obj.sayname();
+			
+			
+			
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

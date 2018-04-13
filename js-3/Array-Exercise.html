@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数组练习</title>
+		
+		<script type="text/javascript">
+			var arr = [8,12,"Bill",9.1,null];
+			
+			console.log("初始数组:"+arr);
+			
+			/*
+			 *push():向数组的末尾添加元素
+			 * 返回值:数组的长度
+			 * */
+			console.log("------------push()练习----------------");
+			var n = arr.push("Python","spring","SpringMVC","Mybatis");
+			console.log("push后:"+arr);
+			console.log("n:"+n);
+			console.log("length:"+arr.length);
+			
+
+			/*
+			 *pop():删除数组末尾的元素
+			 * 返回值:被删除的元素
+			 * */
+			console.log();
+			console.log("------------pop()练习----------------");
+			var str = arr.pop();
+			console.log("str:"+str);
+			console.log("pop后  length:"+arr.length);
+			
+			/*
+			 *unshift():向数组开头添加元素
+			 * 返回值:数组的长度
+			 * */
+			console.log("------------unshift()练习----------------");
+			var a = arr.unshift("Linus","朱建凯","张肖霞","何可可");
+			console.log("arr:"+arr);
+			console.log("--->a:"+a);
+			
+			/*
+			 *shift():删除数组的首元素
+			 *返回值:被删除的元素
+			 * */
+			console.log("------------shift()练习----------------");
+			var s = arr.shift();
+			console.log("arr:"+arr);
+			console.log("shift后 s:"+s);
+			
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

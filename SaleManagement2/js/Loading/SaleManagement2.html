@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SaleManagement2</title>
+<!--<script src="js/Loading/jquery.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>-->
+<script src="js/Loading/jquery.js"></script>
+<script src="js/Loading/jquery.validate.min.js"></script>
+<script src="js/Loading/messages_zh.js"></script>
+
+<!----->
+
+
+<script>
+$(function() {
+        $("#tempForm").validate({
+            rules: {
+                "zhanghao": {
+                    required: true,
+                    minlength:4
+                },
+                "mima":{
+                	required:true,
+                	minlength:6,
+                	maxlength:16
+                }
+            },
+            messages: {
+                "zhanghao": {
+                    required: "<font color='red'>账号不能为空</font>",
+                    minlength:"<font color='red'>账号最少为4个字符</font>"
+                },
+                "mima":{
+                	required: "<font color='red'>密码不能为空</font>",
+                	minlength: "<font color='red'>密码最少为4个字符</font>",
+                	maxlength: "<font color='red'>密码最多为16个字符</font>"
+                }
+            }
+        });
+    });
+</script>
+</head>
+<style>
+#header {
+    background-color:#FFF;
+    color:white;
+    text-align:center;
+    padding:5px;
+	height:60px;
+}
+#nav {
+    line-height:30px;
+    background-color:#FFF;
+    height:310px;
+    width:25%;
+    float:left;
+    padding:5px; 
+}
+#section {
+
+	width:50%;
+    float:left;
+    padding:10px;
+	border:#009;
+}
+#footer {
+    background-color:#FFF;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+#juzhong{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+</style>
+<body>
+<!-- 这是头部信息 -->
+<div id="header">
+
+</div>
+<!-- 这是左部信息 -->
+<div id="nav">
+<!-- 这是中部信息 -->
+</div>
+<div id="section" style="border:1px solid #999">
+<h2 align="center">管理员登陆</h2>
+<form action="" id="tempForm">
+  <p align="center">账号: <input type="text" name="zhanghao" /></p>
+  <p align="center">密码: <input type="password" name="mima" /></p>
+  <p align="center"><input type="submit" value="提交" onclick="submitForm()"></p>
+</form>
+<br />
+<p align="center"><button onclick="xiugaimima()">修改密码</button> </p>
+<script>
+	function xiugaimima(){
+		alert("联系电话: 18711194462");
+	}
+</script>
+</div>
+
+</body>
+</html>

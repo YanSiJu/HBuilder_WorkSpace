@@ -1,0 +1,20 @@
+
+#flightCompany,#travelAgency,#traveller{
+	
+	margin: 100px;
+	margin-left: 500px;
+	/*padding: 5px 30px;*/
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 120px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	background-color:#00FF66;
+}
+
+a{
+	text-decoration: none;
+}

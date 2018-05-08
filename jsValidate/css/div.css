@@ -1,0 +1,31 @@
+	#header {
+		background-color: #FFF;
+		color: white;
+		text-align: center;
+		padding: 5px;
+		height: 60px;
+	}
+	
+	#nav {
+		line-height: 30px;
+		background-color: #FFF;
+		height: 310px;
+		width: 35%;
+		float: left;
+		padding: 5px;
+	}
+	
+	#section {
+		width: 30%;
+		float: left;
+		padding: 10px;
+		border: #009;
+	}
+	
+	#footer {
+		background-color: #FFF;
+		color: white;
+		clear: both;
+		text-align: center;
+		padding: 5px;
+	}

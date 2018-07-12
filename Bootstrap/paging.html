@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap分页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<h1>分页</h1>
+			<ul class="pagination pagination-lg">
+				<li class="page-item">
+					<a href="#" class="page-link">Previous</a>
+				</li>
+				<li class="page-item">
+					<a href="#" class="page-link">1</a>
+				</li>
+				<li class="page-item">
+					<a href="#" class="page-link">2</a>
+				</li>
+				<li class="page-item active">
+					<a href="#" class="page-link">3</a>
+				</li>
+				<li class="page-item">
+					<a href="#" class="page-link">末页</a>
+				</li>
+			</ul>
+
+			<h1>下拉菜单</h1>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Linux</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">openSUSE</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">archLinux</a>
+				</div>
+			</div>
+
+			<br />
+			<h1>列表组</h1>
+			<ul class="list-group">
+				<li class="list-group-item  list-group-item-primary">openSUSE</li>
+				<li class="list-group-item list-group-item-sucess">unix</li>
+				<li class="list-group-item  list-group-item-info">ubuntu</li>
+				<li class="list-group-item list-group-item-warning">red hat</li>
+				<li class="list-group-item list-group-item-danger">archLinux</li>
+			</ul>
+
+			<br />
+			<button data-toggle="collapse" data-target="#fold">折叠</button>
+			<div id="fold" class="collapse show">
+				<pre>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</pre>
+			</div>
+		</div>
+	</body>
+
+</html>

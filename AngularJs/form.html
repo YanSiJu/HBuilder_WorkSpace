@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+		<title>AngularJs</title>
+	</head>
+
+	<body ng-app="">
+		<div>
+			<form>
+				复选框: <input type="checkbox" ng-model="switch" />
+				<select ng-model="myvar">
+					<option value="" />
+					<option value="dogs">dogs</option>
+					<option value="tuts">tuts</option>
+					<option value="cars">cars</option>
+				</select>
+
+			</form>
+
+			{{myvar}}
+			<h1 ng-show="switch">My Header!!</h1>
+			<div ng-switch="myvar">
+				<div ng-switch-when="dogs">
+					<h1>Dogs</h1>
+					<p>Welcome to a world of dogs.</p>
+				</div>
+				<div ng-switch-when="tuts">
+					<h1>Tutorials</h1>
+					<p>Learn from examples.</p>
+				</div>
+				<div ng-switch-when="cars">
+					<h1>Cars</h1>
+					<p>Read about cars.</p>
+				</div>
+			</div>
+·
+		</div>
+	</body>
+
+</html>

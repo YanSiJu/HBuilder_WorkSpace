@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs表单验证</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+		<!--<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>-->
+		<style>
+			.form-control {
+				width: 300px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container" ng-app="myApp" ng-controller="validateCtrl">
+			<form class="table" novalidate="novalidate" name="myform">
+				<div class="form-group">
+					<label>用户名：</label>
+					<input class="form-control" type="text" ng-model="name" required="required" name="name" />
+					<span style="color:red" ng-show="myform.name.$dirty && myform.name.$invalid">
+						<span ng-show="myform.name.$error.required">用户名不能为空</span>
+					</span>
+				</div>
+				<div class="form-group">
+					<label>密码：</label>
+					<input class="form-control" type="password" ng-model="pwd" required="required" name="pwd" />
+					<span style="color: red;" ng-show="myform.pwd.$error.required">密码不能为空</span>
+				</div>
+				<div class="form-group">
+					<label>邮箱： </label>
+					<input class="form-control" type="email" ng-model="email" required="required" name="email" />
+					<span style="color: red;" ng-show="myform.email.$dirty && myform.email.$invalid">
+						<span ng-show="myform.email.$error.required">邮箱不能为空</span>
+					<span ng-show="myform.email.$error.email">邮箱是非法的</span>
+					</span>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label"></label>
+					<!--ng-disabled="myform.name.$dirty && myform.name.$invalid"-->
+					<input type="submit" class="form-check-input" ng-disabled="myform.name.$dirty && myform.name.$invalid
+						|| myform.email.$dirty && myform.email.$invalid ||  myform.pwd.$invalid" />
+				</div>
+			</form>
+			<script>
+				var app = angular.module('myApp', []);
+				app.controller('validateCtrl', function($scope) {
+					$scope.name = 'John Doe';
+					$scope.email = 'john.doe@gmail.com';
+				});
+			</script>
+		</div>
+	</body>
+
+</html>

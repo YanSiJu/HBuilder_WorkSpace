@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/showGoods.css" type="text/css" />
+<title>${param.name}</title>
+</head>
+<body>
+	<div class="content">
+
+
+		<table class="table">
+			<tr class="tr1">
+
+				<td><a href="index.jsp" class="index"
+					style="text-decoration: none;">首页</a></td>
+
+				<td>
+					<div class="right">
+						<a href="register.jsp" style="text-decoration: none;" class="href">注册</a>
+						&nbsp;|&nbsp; <a href="login.jsp" style="text-decoration: none;"
+							class="href">登录</a>
+					</div>
+
+				</td>
+
+			</tr>
+
+
+			<tr class="tr2">
+
+				<td><img src="img/华为荣耀10海鸥灰正面.png" class="imgSrc">
+				</td>
+
+				<td>
+					<h2>荣耀 畅玩7X 4GB+64GB 全网通4G全面屏手机 高配版 幻夜黑</h2>
+					<br>
+
+					<h2 class="back">
+						价格：<b class="price">￥1999.00</b>
+					</h2>
+					<br>
+
+
+					<h3>
+						选择颜色:
+						<button class="color">海鸥灰</button>
+						<button class="color">幻夜黑</button>
+						<button class="color">幻影蓝</button>
+						<button class="color">幻影紫</button>
+					</h3>
+					<br>
+
+					<h3>
+						选择配置:
+						<button class="color">6G+64G</button>
+						<button class="color">6G+128G</button>
+					</h3>
+					<br>
+					<form action="shoppingCar.jsp" method="post">
+						<input type="submit" value="加入购物车" class="button" /> <input
+							type="submit" value="立即购买" class="button" />
+					</form> <br>
+				<br>
+				</td>
+
+			</tr>
+		</table>
+		<div class="techNum">
+			<h3 class="in">技术参数</h3>
+
+		</div>
+		<br>
+		<br>
+		<table class="table2">
+			<tr>
+				<td class="t">电池容量:${sessionScope.goods.batteryCapacity}</td>
+				<td class="t">前置摄像头像素:${sessionScope.goods.frontFacingCamera}</td>
+				<td class="t">后置摄像头像素:${sessionScope.goods.rearCamera}</td>
+			</tr>
+		</table>
+		<br>
+		<div class="techNum">
+			<h3 class="in">商品评价</h3>
+
+		</div>
+		<hr>
+		<table class="commentTable">
+			<tr>
+				<td class="pic"><img  src="img/user.jpg" class="userHead"></td>
+				<td class="comment">这手机着实好用，支持国产机，支持华为，下次再来！</td>
+			</tr>
+
+			<tr>
+				<td class="pic"><img src="img/user.jpg" class="userHead"></td>
+				<td class="comment">早知道就买iPhone了，但是买了iPhone就要吃土，先用着华为吧！</td>
+			</tr>
+
+			<tr>
+				<td class="pic"><img src="img/user.jpg" class="userHead"></td>
+				<td class="comment">拍照杠杠的，安卓机最爱华为，下台手机依旧华为！</td>
+			</tr>
+
+		</table>
+		<hr>
+
+	</div>
+
+
+</body>
+</html>

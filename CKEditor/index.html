@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="//cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+		<title>ckeditor</title>
+		<script>
+			window.onload = function() {
+				CKEDITOR.replace("editor"); // 指定textarea的id或name
+			}
+			function print(){
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<textarea id="editor" name="content"></textarea>
+		<button onclick="print()"></button>
+	</body>
+
+</html>

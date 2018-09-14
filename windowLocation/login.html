@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<script>
+			window.onload = function() {
+				// 跳转url 以及传递的参数
+				var url = location.search;        
+				var theRequest = new Object();         
+				if(url.indexOf("?") != -1) {
+					var str = url.substr(1);         
+					var strs = new Array();           
+					strs = str.split('&');         
+					console.log(strs);
+
+					console.log(strs[0].split("="));
+					console.log(strs[1].split("="));
+					console.log(strs[2].split("="));
+					console.log(strs[3].split("="));
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>登录页面</h1>
+	</body>
+
+</html>

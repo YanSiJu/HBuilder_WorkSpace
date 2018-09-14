@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div>
+				<p id="heading">登录博客园 - 代码改变世界</p>
+				<form id="loginForm" method="post">
+					<div class="form-group">
+						<label for="name">登录用户名(<a href="http://www.google.com" target="_blank">找回</a>)</label>
+						<input type="text" id="name" name="name" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="password">密码(<a href="http://www.google.com" target="_blank">重置</a>)</label>
+						<input type="password" id="password" name="password" class="form-control" />
+					</div>
+					<div class="form-check">
+						<label for="form-check-label"></label>
+						<input type="checkbox" class="form-check-input" />下次自动登录
+					</div>
+					<span id="error" style="color: red;"></span>
+					<button class="btn btn-secondary" id="loginBtn" onclick="login()">登&nbsp;&nbsp;&nbsp;录</button>
+				</form>
+				<div id="div_1">
+					&gt;&gt;
+					<a href="http://www.google.com" target="_blank"> 立即注册 </a>
+					<br /> &gt;&gt;
+					<a href="http://www.google.com" target="_blank">反馈问题</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

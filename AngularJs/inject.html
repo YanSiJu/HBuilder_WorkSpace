@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Angular Js依赖注入</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="img/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+	</head>
+
+	<body>
+
+		<div ng-app="myapp" ng-controller="myCtrl">
+			<input a number:<input type="number" ng-model="number" />
+			<button ng-click="square()"> X<sup>2</sup> </button>
+			<br />
+			<span> result:{{ result }} </span>
+		</div>
+
+		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp", []);
+
+			app.value("defaultValue", 9);
+
+			app.factory("MathFactory", function() {
+				var factory = {};
+				factory.square = function(a) {
+					return a * a;
+				}
+				return factory;
+			});
+
+			app.service("CalcService", function(MathFactory) {
+				this.square = function(a) {
+					return MathFactory.square(a);
+				}
+			});
+
+			app.controller("myCtrl", function($scope, CalcService, defaultValue) {
+				$scope.number = defaultValue;
+				$scope.result = CalcService.square($scope.number);
+				$scope.square = function() {
+					$scope.result = CalcService.square($scope.number);
+				}
+			});
+		</script>
+
+	</body>
+
+</html>

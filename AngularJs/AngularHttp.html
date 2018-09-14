@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+		<title>Angular Http</title>
+		<link rel="icon" href="img/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+	</head>
+
+	<body>
+		<!--{{ x.Name + "," x.Country }}-->
+		<div ng-app="myapp" ng-controller="siteCtrl">
+			<ul>
+				<li ng-repeat="x in names"> {{ x.Name + "," + x.Url + "," + x.Country }} </li>
+			</ul>
+		</div>
+
+		<script>
+			var app = angular.module("myapp", []);
+			app.controller("siteCtrl", function($scope, $http) {
+				$http({
+					method: 'GET',
+					url: 'js/sites.json'
+				}).then(function successCallback(response) {
+					$scope.names = response.data.sites;
+					console.log(response);
+				}, function errorCallback() {
+
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

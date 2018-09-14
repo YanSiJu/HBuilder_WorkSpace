@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="img/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+		<title>AngularJSBootstrap</title>
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	</head>
+
+	<body ng-app="myapp" ng-controller="userCtrl">
+		<div class="container">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<td>编辑</td>
+						<td>FirstName</td>
+						<td>LastName</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in users">
+						<td>
+							<button type="button" class="btn" ng-click="editUser(user.id)">
+								<span class="glyphicon glyphicon-pencil"></span>编辑
+							</button>
+						</td>
+						<td>{{ user.FirstName }}</td>
+						<td> {{ user.LastName }}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<button type="button" class="btn btn-success" ng-click="editUser('new')">
+				<span class="glyphicon glyphicon-user"></span>创建新用户
+			</button>
+
+			<h3 ng-show="edit">创建新用户</h3>
+			<h3 ng-hide="edit">编辑用户</h3>
+
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">名:</label>
+					<input type="text" ng-model="firstName" ng-disabled="!edit" />
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">姓:</label>
+					<input type="text" ng-model="lastName" ng-disabled="!edit" />
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">密码:</label>
+					<input type="password" ng-model="passwd" />
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">重复密码:</label>
+					<input type="password" ng-model="repasswd" placeholder="" />
+				</div>
+			</form>
+
+			<hr>
+			<button type="btn" class="btn btn-success" style="margin-left: 15%;" ng-click="addUser()" ng-disabled="error || incompleted">
+				<span class="glyphicon glyphicon-save"></span>修改
+			</button>
+			</hr>
+		</div>
+		<script src="js/user.js"></script>
+	</body>
+
+</html>

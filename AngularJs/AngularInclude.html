@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Angular Js包含</title>
+		<link rel="icon" href="img/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon" />
+		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+	</head>
+
+	<body>
+
+		<div ng-app="myapp" ng-controller="myCtrl">
+			<!--<time></time>-->
+			<div ng-include="'sites.html'">
+				<!--<table>
+					<tr ng-repeat=" x in names ">
+						<td>{{ x.Name }}</td>
+						<td>{{ x.Url }}</td>
+						<td> {{ x.Country }}</td>
+					</tr>
+				</table>-->
+			</div>
+		</div>
+
+		<script>
+			var app = angular.module("myapp", []);
+			app.controller("myCtrl", function($scope, $http) {
+				$http({
+					method: "GET",
+					url: "js/sites.json"
+				}).then(function successCallback(response) {
+					$scope.names = response.data.sites;
+				}, function errorCallback(response) {
+
+				})
+			});
+		</script>
+
+	</body>
+
+</html>

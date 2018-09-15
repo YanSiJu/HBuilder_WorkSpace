@@ -3,16 +3,69 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>登录</title>
-		<link rel="icon" href="img/favicon.ico"  type="image/x-icon" />
+		<title>用户注册 - 博客园</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+		<link href="css/register.css" rel="stylesheet" />
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
 		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="js/register.js"></script>
 	</head>
 
 	<body>
+		<div id="div_1">
+			<ul>
+				<li>
+					<a href="http://www.google.com" target="_blank" class="link">帮助</a>
+				</li>
+				<li>
+					<a href="http://www.google.com" target="_blank" class="link" id="regist">注册</a>
+				</li>
+				<li>
+					<a href="http://www.google.com" target="_blank" class="link">登录</a>
+				</li>
+				<li>
+					<a href="http://www.google.com" target="_blank" class="link">首页</a>
+				</li>
+			</ul>
+		</div>
+
+		<p style="margin-top: 40px;font-size: 20px;margin-left: 200px;">注册新用户</p>
+		<hr />
+
+		<form class="container">
+			<div class="form-group">
+				<label for="tel">手机号码：</label>
+				<input type="text" class="form-control" name="tel" id="tel" />
+			</div>
+			<div class="form-group">
+				<label for="userName">用户名：</label>
+				<input type="text" class="form-control" name="userName" id="userName" />
+			</div>
+			<div class="form-group">
+				<label for="nickName">昵称：</label>
+				<input type="text" class="form-control" name="nickName" id="nickName" />
+			</div>
+			<div class="form-group">
+				<label for="password">密码：</label>
+				<input type="password" class="form-control" name="password" id="password" />
+			</div>
+			<div class="form-group">
+				<label for="repassword">确认密码：</label>
+				<input type="password" class="form-control" name="repassword" id="repassword" />
+			</div>
+			<input type="button" class="btn btn-primary" value="注&emsp;册" onclick="register()" style="margin-left: 220px;width: 90px;" />
+		</form>
+
+		<p style="margin-left: 230px;">* “注册” 按钮，即表示您同意并愿意遵守
+			<a href="https://passport.cnblogs.com/agreement.html" target="_blank">用户协议</a>。</p>
+		<br /><br />
+		<p style="margin-left: 230px;">
+			<a href="https://www.cnblogs.com/AboutUS.aspx" target="_blank">关于博客园</a>
+			<a href="https://www.cnblogs.com/ContactUs.aspx" style="margin-left: 10px;" target="_blank">联系我们</a>&emsp;©2004-2018&emsp;
+			<a href="http://www.google.com" style="margin-left: 10px;" target="_blank">博客园</a>&emsp;保留所有权利 Powered by Java Web Core on Linux</p>
 
 	</body>
 

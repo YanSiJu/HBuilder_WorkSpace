@@ -1,0 +1,12 @@
+注：请为您的随笔选择最合适的分类，请不要发布在不相关的分类中，否则您的帐户会被取消网站分类发布权限。
+.NET技术：   .NET新手区   ASP.NET   C#   .NET Core   WinForm   Silverlight   WCF   CLR   WPF   XNA   Visual Studio   ASP.NET MVC   控件开发   Entity Framework   NHibernate   WinRT/Metro   UWP 
+编程语言：   Java   C++   PHP   Delphi   Python   Ruby   C语言   Erlang   Go   Swift   Scala   R语言   Verilog   其它语言 
+软件设计：   架构设计   面向对象   设计模式   领域驱动设计 
+Web前端：   Html/Css   JavaScript   jQuery   HTML5 
+企业信息化：   BPM   SharePoint   GIS技术   SAP   Oracle ERP   Dynamics CRM   K2 BPM   信息安全   企业信息化其他 
+手机开发：   Android开发   iOS开发   Windows Phone   Windows Mobile   其他手机开发 
+软件工程：   敏捷开发   项目与团队管理   软件工程其他 
+数据库技术：   SQL Server   Oracle   MySQL   NoSQL   大数据   其它数据库 
+操作系统：   Windows   Windows Server   Linux   OS X   嵌入式 
+其他分类：   非技术区   软件测试   代码与软件发布   计算机图形学   Google开发   游戏开发   程序人生   求职面试   读书区   转载区   Windows CE  翻译区   开源研究   Flex   云计算   算法与数据结构   人工智能   区块链   其他技术区 
+ 取消选择

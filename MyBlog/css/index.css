@@ -34,7 +34,33 @@
 	height: 20px;*/
 	margin-left: 3px;
 	margin-top: 35px;
-	border-color:white;
+	border-color: white;
+}
+
+#article {
+	/*float: left;*/
+	border: 1px solid grey;
+	/*width: 95%;
+	height: 20px;*/
+	margin-left: 3px;
+	margin-top: 400px;
+	border-color: white;
+}
+
+.blog {
+	margin-left: 190px;
+	margin-top: 18px;
+}
+
+#dashed {
+	border-top: 1px dashed #cccccc;
+	height: 1px;
+	overflow: hidden;
+	margin-left: 190px;
+}
+
+.title {
+	font-size: 15px;
 }
 
 #logo {
@@ -79,4 +105,9 @@ li a:hover {
 	color: black;
 	font-size: 16px;
 	margin-left: 12px;
+}
+
+.search {
+	width: 90px;
+	margin-left: 10px;
 }

@@ -1,0 +1,80 @@
+.div_1 {
+	float: left;
+	font-size: 30px;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+.card_left {
+	float: left;
+}
+
+.card_right {
+	float: right;
+}
+
+.card {
+	width: 180px;
+	float: left;
+}
+.foot{
+	margin-left: 5px;
+}
+
+#dashed {
+	border-top: 1px dashed #cccccc;
+	height: 1px;
+	overflow: hidden;
+	margin-left: 8px;
+}
+
+#span_4 {
+	float: right;
+	margin-right: 70px;
+}
+
+#span_nickname {
+	font-size: 20px;
+}
+
+.pagination {
+	margin-left: 340px;
+}
+
+#avatar {
+	border: 1px solid #664a2c;
+	float: left;
+	margin-right: 10px;
+	margin-left: 70px;
+	height: 240px;
+	width: 200px;
+}
+
+.followees {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.portrait {
+	margin-left: 10px;
+}
+
+#content {
+	line-height: 1.2em;
+	margin: 0px;
+	float: right;
+	font-size: 17px;
+}
+
+#img {
+	float: right;
+	margin-top: 30px;
+	margin-right: 70px;
+}
+
+#welcomemsg {
+	margin-left: 150px;
+	font-size: 25px;
+}
+
+.div_2 {}

@@ -6,137 +6,18 @@
 		<title>john - 博客园</title>
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+		<link href="css/blogMenu.css" rel="stylesheet" />
 		<link href="css/blog.css" rel="stylesheet" />
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
 		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="">
 
 		<div class="container">
-			<header>
-				<ul>
-					<li>
-						<a href="">博客园 </a>
-					</li>
-					<li>
-						<a href="">首页 </a>
-					</li>
-					<li>
-						<a href="">新随笔 </a>
-					</li>
-					<li>
-						<a href="">联系 </a>
-					</li>
-					<li>
-						<a href="">订阅 </a>
-					</li>
-					<li>
-						<a href="">管理 </a>
-					</li>
-				</ul>
-			</header>
-
-			<nav>
-				<div class="card">
-					<div class="card-body userInfo">
-						<p class="card-text">昵称：7tiny</p>
-						<p class="card-text">园龄：2年1个月</p>
-						<p class="card-text">粉丝：88</p>
-						<p class="card-text">关注：9</p>
-						<p class="card-text">+加关注</p>
-					</div>
-				</div>
-				<br />
-				<div class="card">
-					<h1 class="card-title essay"><br />  <span  class="essayClassify">随笔分类</span> </h1>
-					<div class="card-body">
-						<p class="card-text">
-							<a href="#" class="card-link"> Algorithms and Data Structures(1) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> BigData/CloudComputing(2) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> C#/.Net/NetCore(19) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> C#/.Net/NetCore(19) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> Git/GitHub(2) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> Python(5) </a>
-						</p>
-					</div>
-				</div>
-				<br />
-				<div class="card">
-					<h1 class="card-title essay"><br />  <span  class="essayClassify">阅读排行榜</span> </h1>
-					<div class="card-body">
-						<p class="card-text">
-							<a href="#" class="card-link"> 1. Restful风格API接口开发 <br /> springMVC篇(67201) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 2. SpringMVC框架入门配置 <br /> IDEA下搭建Maven项目(24208) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 3. SpringMVC文件上传下载(9707) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 4. AI人工智能-Python实现 <br /> 人机对话(8961) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 5. Nginx负载均衡（架构之路） </a>
-						</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<h1 class="card-title essay"><br />  <span  class="essayClassify">评论排行榜</span> </h1>
-					<div class="card-body">
-						<p class="card-text">
-							<a href="#" class="card-link"> 1. Restful风格API接口开发 <br /> springMVC篇(67201) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 2. SpringMVC框架入门配置 <br /> IDEA下搭建Maven项目(24208) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 3. SpringMVC文件上传下载(9707) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 4. AI人工智能-Python实现 <br /> 人机对话(8961) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 5. Nginx负载均衡（架构之路） </a>
-						</p>
-					</div>
-				</div>
-
-				<div class="card">
-					<h1 class="card-title essay"><br />  <span  class="essayClassify">推荐排行榜</span> </h1>
-					<div class="card-body">
-						<p class="card-text">
-							<a href="#" class="card-link"> 1. Restful风格API接口开发 <br /> springMVC篇(67201) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 2. SpringMVC框架入门配置 <br /> IDEA下搭建Maven项目(24208) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 3. SpringMVC文件上传下载(9707) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 4. AI人工智能-Python实现 <br /> 人机对话(8961) </a>
-						</p>
-						<p class="card-text">
-							<a href="#"> 5. Nginx负载均衡（架构之路） </a>
-						</p>
-					</div>
-				</div>
-			</nav>
+			<div ng-include="'blogMenu.html'"></div>
 
 			<section>
 				<div class="card" style="width: 1000px;background-color: white;">

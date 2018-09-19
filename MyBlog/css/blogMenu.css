@@ -1,0 +1,68 @@
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	width: 105%;
+}
+
+nav {
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 2000px;
+	width: 300px;
+	float: left;
+	padding: 5px;
+}
+
+.card-text {
+	width: 300px;
+}
+
+
+
+#dashed {
+	border-top: 1px dashed #cccccc;
+	height: 1px;
+	overflow: hidden;
+	margin-left: 8px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.essay {
+	width: 290px;
+	height: 50px;
+	text-align: center;
+	background-color: #07EAD5;
+	font-size: 16px;
+}
+
+.essayClassify {
+	float: left;
+	margin-left: 80px;
+}
+
+.userInfo {
+	font-size: 16px;
+}
+
+li a {
+	display: block;
+	margin-left: 10px;
+}
+
+li {
+	float: left;
+	margin-top: 10px;
+}
+
+li a:hover {
+	background-color: #57F1F1;
+	text-decoration: none;
+}

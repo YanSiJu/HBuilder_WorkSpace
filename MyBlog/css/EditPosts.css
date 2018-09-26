@@ -1,0 +1,11 @@
+.text {
+	width: 93%;
+}
+
+#editor {
+	height: 1200px;
+}
+
+.btn{
+	margin-left: 10px;
+}

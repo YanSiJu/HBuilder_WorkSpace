@@ -6,6 +6,7 @@
 		<title>我的随笔 - 博客后台 -博客园</title>
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+		<link href="css/post.css" rel="stylesheet" />
 		<link href="css/posts.css" rel="stylesheet" />
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
@@ -13,132 +14,79 @@
 		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="">
 
-		<header>
-			<div>
-				<a href="#"><img src="img/adminlogo.gif" /></a>
-				<ul>
-					<li>
-						<a href="#" class="link">退出</a>
-					</li>
-					<li>
-						<a href="#" class="link">博客</a>
-					</li>
-					<li>
-						<a href="#" class="link">短消息</a>
-					</li>
-					<li>
-						<a href="#" class="link">rm_rf </a>
-					</li>
-				</ul>
-			</div>
-		</header>
-
-		<nav>
-			<div class="card">
-				<h1 class="card-title opr"><br />  <span  class="operate">操作</span> </h1>
-				<div class="card-body">
-					<p class="card-text">
-						<a href="#" class="card-link"> 添加新随笔 </a>
-					</p>
-					<p class="card-text">
-						<a href="#"> 草稿箱 </a>
-					</p>
-
-					<p class="card-text">
-						<a href="#"> 设置默认编辑器 </a>
-					</p>
-					<p class="card-text">
-						<a href="#"> 博客客户端 </a>
-					</p>
-					<p class="card-text">
-						<a href="#"> 博客签名 </a>
-					</p>
-					<p class="card-text">
-						<a href="#"> 博客备份 </a>
-					</p>
+		<div>
+			<div ng-include="'post.html'"></div>
+			<section>
+				<div class="container">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th class="article-title">标&emsp;题</th>
+								<th>发布状态</th>
+								<th>评论数</th>
+								<th>阅读数</th>
+								<th>操作</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="#">团队项目开发总结（2017-10-11 19:27）</a>
+								</td>
+								<td>
+									发布
+								</td>
+								<td> <span class="number">1</span></td>
+								<td> <span class="number">92</span></td>
+								<td> <button class="btn btn-primary" type="button">编辑</button> </td>
+								<td> <button class="btn btn-danger" type="button">删除</button> </td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">别跑了，看看脚下有木有money（2018-03-21 20:19）</a>
+								</td>
+								<td>
+									发布
+								</td>
+								<td> <span class="number">1</span></td>
+								<td> <span class="number">29</span></td>
+								<td> <button class="btn btn-primary" type="button">编辑</button> </td>
+								<td> <button class="btn btn-danger" type="button">删除</button> </td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">springIOC的那些事（2017-11-19 15:41）</a>
+								</td>
+								<td>
+									发布
+								</td>
+								<td> <span class="number">0</span></td>
+								<td> <span class="number">29</span></td>
+								<td> <button class="btn btn-primary" type="button">编辑</button> </td>
+								<td> <button class="btn btn-danger" type="button">删除</button> </td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">scrum 第二次冲刺（2017-11-09 21:36）</a>
+								</td>
+								<td>
+									发布
+								</td>
+								<td> <span class="number">1</span></td>
+								<td> <span class="number">46</span></td>
+								<td> <button class="btn btn-primary" type="button">编辑</button> </td>
+								<td> <button class="btn btn-danger" type="button">删除</button> </td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			</div>
-			<br />
-			<div class="card">
-				<h1 class="card-title opr" style="background-color: #00CED1;"><br />  <span  class="operate">分类</span> </h1>
-				<div class="card-body">
-					<p class="card-text">
-						<a href="#" class="card-link"> 编辑分类 </a>
-					</p>
-				</div>
-			</div>
 
-		</nav>
+			</section>
+		</div>
 
-		<section>
-			<div class="container">
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th class="article-title">标&emsp;题</th>
-							<th>发布状态</th>
-							<th>评论数</th>
-							<th>阅读数</th>
-							<th>操作</th>
-							<th>操作</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<a href="#">团队项目开发总结（2017-10-11 19:27）</a>
-							</td>
-							<td>
-								发布
-							</td>
-							<td> <span class="number">1</span></td>
-							<td> <span class="number">92</span></td>
-							<td> <button class="btn btn-primary" type="button">编辑</button> </td>
-							<td> <button class="btn btn-danger" type="button">删除</button> </td>
-						</tr>
-						<tr>
-							<td>
-								<a href="#">别跑了，看看脚下有木有money（2018-03-21 20:19）</a>
-							</td>
-							<td>
-								发布
-							</td>
-							<td> <span class="number">1</span></td>
-							<td> <span class="number">29</span></td>
-							<td> <button class="btn btn-primary" type="button">编辑</button> </td>
-							<td> <button class="btn btn-danger" type="button">删除</button> </td>
-						</tr>
-						<tr>
-							<td>
-								<a href="#">springIOC的那些事（2017-11-19 15:41）</a>
-							</td>
-							<td>
-								发布
-							</td>
-							<td> <span class="number">0</span></td>
-							<td> <span class="number">29</span></td>
-							<td> <button class="btn btn-primary" type="button">编辑</button> </td>
-							<td> <button class="btn btn-danger" type="button">删除</button> </td>
-						</tr>
-						<tr>
-							<td>
-								<a href="#">scrum 第二次冲刺（2017-11-09 21:36）</a>
-							</td>
-							<td>
-								发布
-							</td>
-							<td> <span class="number">1</span></td>
-							<td> <span class="number">46</span></td>
-							<td> <button class="btn btn-primary" type="button">编辑</button> </td>
-							<td> <button class="btn btn-danger" type="button">删除</button> </td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-		</section>
 	</body>
 
 </html>

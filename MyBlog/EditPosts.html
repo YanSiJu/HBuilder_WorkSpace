@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的随笔 - 博客后台 -博客园</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+		<link href="css/post.css" rel="stylesheet" />
+		<link href="css/EditPosts.css" rel="stylesheet" />
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="//cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+		<script src="js/EditPosts.js"></script>
+	</head>
+
+	<body ng-app="">
+
+		<div>
+			<div ng-include="'post.html'"></div>
+			<section>
+				<div class="container">
+					标题
+					<br />
+					<input type="text" class="text" />
+					<br/><br /> 内容
+					<br />
+					<textarea id="editor" name="content"></textarea>
+					<div id="accortion">
+						<div class="card">
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#collapseOne">
+									网站分类
+								</a>
+							</div>
+							<div id="collapseOne" class="collapse" data-parent="#accordion">
+								<div class="card-body">
+									.NET技术：
+									<div class="radio">
+										<label> <input type="radio"   name="1"/> .NET新手区  </label>
+										<label> <input type="radio"   name="1"/> ASP.NET </label>
+										<label> <input type="radio"   name="1"/> c# </label>
+										<label> <input type="radio"   name="1"/> .NET Core </label>
+										<label> <input type="radio"   name="1"/> winForm </label>
+									</div>
+									开发：
+									<div class="radio">
+										<label> <input type="radio"   name="1"/> Entity Framework  </label>
+										<label> <input type="radio"   name="1"/>  NHibernate </label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					标签
+					<br />
+					<input type="text" class="text" />
+					<br /> (多个关键字之间用“,”分隔，最多不超过10个)
+					<br /><br />
+					<button class="btn btn-primary" type="button">发布</button>
+					<button class="btn btn-primary" type="button">存为草稿</button>
+					<button class="btn btn-primary" type="button">取消</button>
+				</div>
+			</section>
+		</div>
+
+	</body>
+
+</html>
